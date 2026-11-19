@@ -26,7 +26,12 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body className="min-h-full flex flex-col">
+        {children}
+        <footer className="mt-auto border-t py-6 text-center text-sm text-muted-foreground">
+          WorkBot &copy; {new Date().getFullYear()}
+        </footer>
+      </body>
     </html>
   );
 }
