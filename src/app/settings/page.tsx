@@ -1,4 +1,9 @@
+import type { Metadata } from "next";
 import { config } from "@/lib/config";
+
+export const metadata: Metadata = {
+  title: "Settings",
+};
 import {
   Card,
   CardContent,
