@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://workbot.vercel.app/sitemap.xml
