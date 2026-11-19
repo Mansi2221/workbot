@@ -18,6 +18,7 @@ export const metadata: Metadata = {
     template: "%s | WorkBot",
   },
   description: "Your AI-powered workspace assistant.",
+  icons: { icon: "/favicon.svg" },
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
@@ -29,7 +30,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       <body className="min-h-full flex flex-col">
         {children}
         <footer className="mt-auto border-t py-6 text-center text-sm text-muted-foreground">
-          WorkBot &copy; {new Date().getFullYear()}
+          WorkBot &copy; 2026
         </footer>
       </body>
     </html>
